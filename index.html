@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>quijir.github.io</title>
+    <style>
+      * {
+        color: #fff;
+        font-family: Verdana, sans-serif;
+        font-weight: 700;
+      }
+      html {
+        background-color: #000;
+      }
+      a {
+        color: #68f;
+      }
+      a:visited {
+        color: #f4f;
+      }
+      div {
+        border: 5px solid #fff;
+      }
+      p {
+        font-family: "Times New Roman", serif;
+      }
+      button {
+        width: 300px;
+        height: 20px;
+        margin: 30 auto;
+        background-color: #434;
+        border-radius: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hi</h1>
+    <p>knows web dev, c, c++, and python.</p>
+    <h2>projects</h2>
+    <div>
+      <a href="https://quijir.github.io/pycipher-web-template">python cipher web template</a>
+      <br>
+      <a href="https://github.com/quijir/pycipher-web-template" target="_blank">github repo</a>
+      <p>website to run ciphers made in python</p>
+    </div>
+    <button onclick="tabspam()">Free ram eater!!!!! (chrome only)</button>
+    <script>
+      function chheader() {
+        document.querySelector("h1").innerHTML = ["stuff","crap","?~","code","code+","code--","q"][Math.floor(Math.random()*7)]
+      }
+      let tabs = 10
+      function tabspam() {
+        for(let i=0;i<tabs;i++) {
+          window.open('https://quijir.github.io', '_blank')
+        }
+        if(tabs<40) {
+          tabs *= 2;
+        }
+      }
+      setInterval(chheader, 5000)
+    </script>
+  </body>
+</html>
